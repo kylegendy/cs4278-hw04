@@ -1,0 +1,251 @@
+make  all-recursive
+make[1]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17'
+Making all in src
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/src'
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_evhost.lo -MD -MP -MF .deps/mod_evhost.Tpo -c -o mod_evhost.lo mod_evhost.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_evhost.lo -MD -MP -MF .deps/mod_evhost.Tpo -c mod_evhost.c  -fPIC -DPIC -o .libs/mod_evhost.o
+mv -f .deps/mod_evhost.Tpo .deps/mod_evhost.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_evhost.la -rpath /usr/local/lib mod_evhost.lo  
+gcc -shared  .libs/mod_evhost.o   -Wl,-soname -Wl,mod_evhost.so -o .libs/mod_evhost.so
+creating mod_evhost.la
+(cd .libs && rm -f mod_evhost.la && ln -s ../mod_evhost.la mod_evhost.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_simple_vhost.lo -MD -MP -MF .deps/mod_simple_vhost.Tpo -c -o mod_simple_vhost.lo mod_simple_vhost.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_simple_vhost.lo -MD -MP -MF .deps/mod_simple_vhost.Tpo -c mod_simple_vhost.c  -fPIC -DPIC -o .libs/mod_simple_vhost.o
+mv -f .deps/mod_simple_vhost.Tpo .deps/mod_simple_vhost.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_simple_vhost.la -rpath /usr/local/lib mod_simple_vhost.lo  
+gcc -shared  .libs/mod_simple_vhost.o   -Wl,-soname -Wl,mod_simple_vhost.so -o .libs/mod_simple_vhost.so
+creating mod_simple_vhost.la
+(cd .libs && rm -f mod_simple_vhost.la && ln -s ../mod_simple_vhost.la mod_simple_vhost.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_fastcgi.lo -MD -MP -MF .deps/mod_fastcgi.Tpo -c -o mod_fastcgi.lo mod_fastcgi.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_fastcgi.lo -MD -MP -MF .deps/mod_fastcgi.Tpo -c mod_fastcgi.c  -fPIC -DPIC -o .libs/mod_fastcgi.o
+mv -f .deps/mod_fastcgi.Tpo .deps/mod_fastcgi.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_fastcgi.la -rpath /usr/local/lib mod_fastcgi.lo  
+gcc -shared  .libs/mod_fastcgi.o   -Wl,-soname -Wl,mod_fastcgi.so -o .libs/mod_fastcgi.so
+creating mod_fastcgi.la
+(cd .libs && rm -f mod_fastcgi.la && ln -s ../mod_fastcgi.la mod_fastcgi.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_extforward.lo -MD -MP -MF .deps/mod_extforward.Tpo -c -o mod_extforward.lo mod_extforward.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_extforward.lo -MD -MP -MF .deps/mod_extforward.Tpo -c mod_extforward.c  -fPIC -DPIC -o .libs/mod_extforward.o
+mv -f .deps/mod_extforward.Tpo .deps/mod_extforward.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_extforward.la -rpath /usr/local/lib mod_extforward.lo  
+gcc -shared  .libs/mod_extforward.o   -Wl,-soname -Wl,mod_extforward.so -o .libs/mod_extforward.so
+creating mod_extforward.la
+(cd .libs && rm -f mod_extforward.la && ln -s ../mod_extforward.la mod_extforward.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_access.lo -MD -MP -MF .deps/mod_access.Tpo -c -o mod_access.lo mod_access.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_access.lo -MD -MP -MF .deps/mod_access.Tpo -c mod_access.c  -fPIC -DPIC -o .libs/mod_access.o
+mv -f .deps/mod_access.Tpo .deps/mod_access.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_access.la -rpath /usr/local/lib mod_access.lo  
+gcc -shared  .libs/mod_access.o   -Wl,-soname -Wl,mod_access.so -o .libs/mod_access.so
+creating mod_access.la
+(cd .libs && rm -f mod_access.la && ln -s ../mod_access.la mod_access.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_compress.lo -MD -MP -MF .deps/mod_compress.Tpo -c -o mod_compress.lo mod_compress.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_compress.lo -MD -MP -MF .deps/mod_compress.Tpo -c mod_compress.c  -fPIC -DPIC -o .libs/mod_compress.o
+mv -f .deps/mod_compress.Tpo .deps/mod_compress.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_compress.la -rpath /usr/local/lib mod_compress.lo -lz -lbz2  
+gcc -shared  .libs/mod_compress.o  -lz -lbz2  -Wl,-soname -Wl,mod_compress.so -o .libs/mod_compress.so
+creating mod_compress.la
+(cd .libs && rm -f mod_compress.la && ln -s ../mod_compress.la mod_compress.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_auth.lo -MD -MP -MF .deps/mod_auth.Tpo -c -o mod_auth.lo mod_auth.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_auth.lo -MD -MP -MF .deps/mod_auth.Tpo -c mod_auth.c  -fPIC -DPIC -o .libs/mod_auth.o
+mv -f .deps/mod_auth.Tpo .deps/mod_auth.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http_auth_digest.lo -MD -MP -MF .deps/http_auth_digest.Tpo -c -o http_auth_digest.lo http_auth_digest.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http_auth_digest.lo -MD -MP -MF .deps/http_auth_digest.Tpo -c http_auth_digest.c  -fPIC -DPIC -o .libs/http_auth_digest.o
+mv -f .deps/http_auth_digest.Tpo .deps/http_auth_digest.Plo
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http_auth.lo -MD -MP -MF .deps/http_auth.Tpo -c -o http_auth.lo http_auth.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http_auth.lo -MD -MP -MF .deps/http_auth.Tpo -c http_auth.c  -fPIC -DPIC -o .libs/http_auth.o
+mv -f .deps/http_auth.Tpo .deps/http_auth.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_auth.la -rpath /usr/local/lib mod_auth.lo http_auth_digest.lo http_auth.lo -lcrypt    
+gcc -shared  .libs/mod_auth.o .libs/http_auth_digest.o .libs/http_auth.o  -lcrypt  -Wl,-soname -Wl,mod_auth.so -o .libs/mod_auth.so
+creating mod_auth.la
+(cd .libs && rm -f mod_auth.la && ln -s ../mod_auth.la mod_auth.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_rewrite.lo -MD -MP -MF .deps/mod_rewrite.Tpo -c -o mod_rewrite.lo mod_rewrite.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_rewrite.lo -MD -MP -MF .deps/mod_rewrite.Tpo -c mod_rewrite.c  -fPIC -DPIC -o .libs/mod_rewrite.o
+mv -f .deps/mod_rewrite.Tpo .deps/mod_rewrite.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_rewrite.la -rpath /usr/local/lib mod_rewrite.lo   
+gcc -shared  .libs/mod_rewrite.o   -Wl,-soname -Wl,mod_rewrite.so -o .libs/mod_rewrite.so
+creating mod_rewrite.la
+(cd .libs && rm -f mod_rewrite.la && ln -s ../mod_rewrite.la mod_rewrite.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_redirect.lo -MD -MP -MF .deps/mod_redirect.Tpo -c -o mod_redirect.lo mod_redirect.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_redirect.lo -MD -MP -MF .deps/mod_redirect.Tpo -c mod_redirect.c  -fPIC -DPIC -o .libs/mod_redirect.o
+mv -f .deps/mod_redirect.Tpo .deps/mod_redirect.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_redirect.la -rpath /usr/local/lib mod_redirect.lo   
+gcc -shared  .libs/mod_redirect.o   -Wl,-soname -Wl,mod_redirect.so -o .libs/mod_redirect.so
+creating mod_redirect.la
+(cd .libs && rm -f mod_redirect.la && ln -s ../mod_redirect.la mod_redirect.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_status.lo -MD -MP -MF .deps/mod_status.Tpo -c -o mod_status.lo mod_status.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_status.lo -MD -MP -MF .deps/mod_status.Tpo -c mod_status.c  -fPIC -DPIC -o .libs/mod_status.o
+mv -f .deps/mod_status.Tpo .deps/mod_status.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_status.la -rpath /usr/local/lib mod_status.lo  
+gcc -shared  .libs/mod_status.o   -Wl,-soname -Wl,mod_status.so -o .libs/mod_status.so
+creating mod_status.la
+(cd .libs && rm -f mod_status.la && ln -s ../mod_status.la mod_status.la)
+/bin/bash ../libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_accesslog.lo -MD -MP -MF .deps/mod_accesslog.Tpo -c -o mod_accesslog.lo mod_accesslog.c
+ gcc -DHAVE_CONFIG_H -DLIBRARY_DIR=\"/usr/local/lib\" -I. -I.. -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT mod_accesslog.lo -MD -MP -MF .deps/mod_accesslog.Tpo -c mod_accesslog.c  -fPIC -DPIC -o .libs/mod_accesslog.o
+mv -f .deps/mod_accesslog.Tpo .deps/mod_accesslog.Plo
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -module -export-dynamic -avoid-version -no-undefined  -o mod_accesslog.la -rpath /usr/local/lib mod_accesslog.lo  
+gcc -shared  .libs/mod_accesslog.o   -Wl,-soname -Wl,mod_accesslog.so -o .libs/mod_accesslog.so
+creating mod_accesslog.la
+(cd .libs && rm -f mod_accesslog.la && ln -s ../mod_accesslog.la mod_accesslog.la)
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT spawn-fcgi.o -MD -MP -MF .deps/spawn-fcgi.Tpo -c -o spawn-fcgi.o spawn-fcgi.c
+mv -f .deps/spawn-fcgi.Tpo .deps/spawn-fcgi.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99   -o spawn-fcgi spawn-fcgi.o  
+gcc -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -o spawn-fcgi spawn-fcgi.o 
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..  -DDEBUG_PROC_OPEN -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT proc_open-proc_open.o -MD -MP -MF .deps/proc_open-proc_open.Tpo -c -o proc_open-proc_open.o `test -f 'proc_open.c' || echo './'`proc_open.c
+mv -f .deps/proc_open-proc_open.Tpo .deps/proc_open-proc_open.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..  -DDEBUG_PROC_OPEN -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT proc_open-buffer.o -MD -MP -MF .deps/proc_open-buffer.Tpo -c -o proc_open-buffer.o `test -f 'buffer.c' || echo './'`buffer.c
+mv -f .deps/proc_open-buffer.Tpo .deps/proc_open-buffer.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99   -o proc_open proc_open-proc_open.o proc_open-buffer.o  
+gcc -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -o proc_open proc_open-proc_open.o proc_open-buffer.o 
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT server.o -MD -MP -MF .deps/server.Tpo -c -o server.o server.c
+mv -f .deps/server.Tpo .deps/server.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT response.o -MD -MP -MF .deps/response.Tpo -c -o response.o response.c
+mv -f .deps/response.Tpo .deps/response.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT connections.o -MD -MP -MF .deps/connections.Tpo -c -o connections.o connections.c
+mv -f .deps/connections.Tpo .deps/connections.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network.o -MD -MP -MF .deps/network.Tpo -c -o network.o network.c
+mv -f .deps/network.Tpo .deps/network.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT configfile.o -MD -MP -MF .deps/configfile.Tpo -c -o configfile.o configfile.c
+mv -f .deps/configfile.Tpo .deps/configfile.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT configparser.o -MD -MP -MF .deps/configparser.Tpo -c -o configparser.o configparser.c
+mv -f .deps/configparser.Tpo .deps/configparser.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT request.o -MD -MP -MF .deps/request.Tpo -c -o request.o request.c
+mv -f .deps/request.Tpo .deps/request.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT proc_open.o -MD -MP -MF .deps/proc_open.Tpo -c -o proc_open.o proc_open.c
+mv -f .deps/proc_open.Tpo .deps/proc_open.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT buffer.o -MD -MP -MF .deps/buffer.Tpo -c -o buffer.o buffer.c
+mv -f .deps/buffer.Tpo .deps/buffer.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT log.o -MD -MP -MF .deps/log.Tpo -c -o log.o log.c
+mv -f .deps/log.Tpo .deps/log.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT keyvalue.o -MD -MP -MF .deps/keyvalue.Tpo -c -o keyvalue.o keyvalue.c
+mv -f .deps/keyvalue.Tpo .deps/keyvalue.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT chunk.o -MD -MP -MF .deps/chunk.Tpo -c -o chunk.o chunk.c
+mv -f .deps/chunk.Tpo .deps/chunk.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http_chunk.o -MD -MP -MF .deps/http_chunk.Tpo -c -o http_chunk.o http_chunk.c
+mv -f .deps/http_chunk.Tpo .deps/http_chunk.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT stream.o -MD -MP -MF .deps/stream.Tpo -c -o stream.o stream.c
+mv -f .deps/stream.Tpo .deps/stream.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent.o -MD -MP -MF .deps/fdevent.Tpo -c -o fdevent.o fdevent.c
+mv -f .deps/fdevent.Tpo .deps/fdevent.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT stat_cache.o -MD -MP -MF .deps/stat_cache.Tpo -c -o stat_cache.o stat_cache.c
+mv -f .deps/stat_cache.Tpo .deps/stat_cache.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT plugin.o -MD -MP -MF .deps/plugin.Tpo -c -o plugin.o plugin.c
+mv -f .deps/plugin.Tpo .deps/plugin.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT joblist.o -MD -MP -MF .deps/joblist.Tpo -c -o joblist.o joblist.c
+mv -f .deps/joblist.Tpo .deps/joblist.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT etag.o -MD -MP -MF .deps/etag.Tpo -c -o etag.o etag.c
+mv -f .deps/etag.Tpo .deps/etag.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT array.o -MD -MP -MF .deps/array.Tpo -c -o array.o array.c
+mv -f .deps/array.Tpo .deps/array.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_string.o -MD -MP -MF .deps/data_string.Tpo -c -o data_string.o data_string.c
+mv -f .deps/data_string.Tpo .deps/data_string.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_count.o -MD -MP -MF .deps/data_count.Tpo -c -o data_count.o data_count.c
+mv -f .deps/data_count.Tpo .deps/data_count.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_array.o -MD -MP -MF .deps/data_array.Tpo -c -o data_array.o data_array.c
+mv -f .deps/data_array.Tpo .deps/data_array.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_integer.o -MD -MP -MF .deps/data_integer.Tpo -c -o data_integer.o data_integer.c
+mv -f .deps/data_integer.Tpo .deps/data_integer.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT md5.o -MD -MP -MF .deps/md5.Tpo -c -o md5.o md5.c
+mv -f .deps/md5.Tpo .deps/md5.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_fastcgi.o -MD -MP -MF .deps/data_fastcgi.Tpo -c -o data_fastcgi.o data_fastcgi.c
+mv -f .deps/data_fastcgi.Tpo .deps/data_fastcgi.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_select.o -MD -MP -MF .deps/fdevent_select.Tpo -c -o fdevent_select.o fdevent_select.c
+mv -f .deps/fdevent_select.Tpo .deps/fdevent_select.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_linux_rtsig.o -MD -MP -MF .deps/fdevent_linux_rtsig.Tpo -c -o fdevent_linux_rtsig.o fdevent_linux_rtsig.c
+mv -f .deps/fdevent_linux_rtsig.Tpo .deps/fdevent_linux_rtsig.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_poll.o -MD -MP -MF .deps/fdevent_poll.Tpo -c -o fdevent_poll.o fdevent_poll.c
+mv -f .deps/fdevent_poll.Tpo .deps/fdevent_poll.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_linux_sysepoll.o -MD -MP -MF .deps/fdevent_linux_sysepoll.Tpo -c -o fdevent_linux_sysepoll.o fdevent_linux_sysepoll.c
+mv -f .deps/fdevent_linux_sysepoll.Tpo .deps/fdevent_linux_sysepoll.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_solaris_devpoll.o -MD -MP -MF .deps/fdevent_solaris_devpoll.Tpo -c -o fdevent_solaris_devpoll.o fdevent_solaris_devpoll.c
+mv -f .deps/fdevent_solaris_devpoll.Tpo .deps/fdevent_solaris_devpoll.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT fdevent_freebsd_kqueue.o -MD -MP -MF .deps/fdevent_freebsd_kqueue.Tpo -c -o fdevent_freebsd_kqueue.o fdevent_freebsd_kqueue.c
+mv -f .deps/fdevent_freebsd_kqueue.Tpo .deps/fdevent_freebsd_kqueue.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT data_config.o -MD -MP -MF .deps/data_config.Tpo -c -o data_config.o data_config.c
+mv -f .deps/data_config.Tpo .deps/data_config.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT bitset.o -MD -MP -MF .deps/bitset.Tpo -c -o bitset.o bitset.c
+mv -f .deps/bitset.Tpo .deps/bitset.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT inet_ntop_cache.o -MD -MP -MF .deps/inet_ntop_cache.Tpo -c -o inet_ntop_cache.o inet_ntop_cache.c
+mv -f .deps/inet_ntop_cache.Tpo .deps/inet_ntop_cache.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT crc32.o -MD -MP -MF .deps/crc32.Tpo -c -o crc32.o crc32.c
+mv -f .deps/crc32.Tpo .deps/crc32.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT connections-glue.o -MD -MP -MF .deps/connections-glue.Tpo -c -o connections-glue.o connections-glue.c
+mv -f .deps/connections-glue.Tpo .deps/connections-glue.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT configfile-glue.o -MD -MP -MF .deps/configfile-glue.Tpo -c -o configfile-glue.o configfile-glue.c
+mv -f .deps/configfile-glue.Tpo .deps/configfile-glue.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT http-header-glue.o -MD -MP -MF .deps/http-header-glue.Tpo -c -o http-header-glue.o http-header-glue.c
+mv -f .deps/http-header-glue.Tpo .deps/http-header-glue.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_write.o -MD -MP -MF .deps/network_write.Tpo -c -o network_write.o network_write.c
+mv -f .deps/network_write.Tpo .deps/network_write.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_linux_sendfile.o -MD -MP -MF .deps/network_linux_sendfile.Tpo -c -o network_linux_sendfile.o network_linux_sendfile.c
+mv -f .deps/network_linux_sendfile.Tpo .deps/network_linux_sendfile.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_freebsd_sendfile.o -MD -MP -MF .deps/network_freebsd_sendfile.Tpo -c -o network_freebsd_sendfile.o network_freebsd_sendfile.c
+mv -f .deps/network_freebsd_sendfile.Tpo .deps/network_freebsd_sendfile.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_writev.o -MD -MP -MF .deps/network_writev.Tpo -c -o network_writev.o network_writev.c
+mv -f .deps/network_writev.Tpo .deps/network_writev.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_solaris_sendfilev.o -MD -MP -MF .deps/network_solaris_sendfilev.Tpo -c -o network_solaris_sendfilev.o network_solaris_sendfilev.c
+mv -f .deps/network_solaris_sendfilev.Tpo .deps/network_solaris_sendfilev.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT network_openssl.o -MD -MP -MF .deps/network_openssl.Tpo -c -o network_openssl.o network_openssl.c
+mv -f .deps/network_openssl.Tpo .deps/network_openssl.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT splaytree.o -MD -MP -MF .deps/splaytree.Tpo -c -o splaytree.o splaytree.c
+mv -f .deps/splaytree.Tpo .deps/splaytree.Po
+gcc -DHAVE_CONFIG_H -DLIBRARY_DIR="\"/usr/local/lib\"" -I. -I..   -D_REENTRANT -D__EXTENSIONS__ -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -MT status_counter.o -MD -MP -MF .deps/status_counter.Tpo -c -o status_counter.o status_counter.c
+mv -f .deps/status_counter.Tpo .deps/status_counter.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -export-dynamic  -o lighttpd server.o response.o connections.o network.o configfile.o configparser.o request.o proc_open.o buffer.o log.o keyvalue.o chunk.o http_chunk.o stream.o fdevent.o stat_cache.o plugin.o joblist.o etag.o array.o data_string.o data_count.o data_array.o data_integer.o md5.o data_fastcgi.o fdevent_select.o fdevent_linux_rtsig.o fdevent_poll.o fdevent_linux_sysepoll.o fdevent_solaris_devpoll.o fdevent_freebsd_kqueue.o data_config.o bitset.o inet_ntop_cache.o crc32.o connections-glue.o configfile-glue.o http-header-glue.o network_write.o network_linux_sendfile.o network_freebsd_sendfile.o network_writev.o network_solaris_sendfilev.o network_openssl.o splaytree.o status_counter.o  -ldl      
+gcc -g -O2 -Wall -W -Wshadow -pedantic -std=gnu99 -o lighttpd server.o response.o connections.o network.o configfile.o configparser.o request.o proc_open.o buffer.o log.o keyvalue.o chunk.o http_chunk.o stream.o fdevent.o stat_cache.o plugin.o joblist.o etag.o array.o data_string.o data_count.o data_array.o data_integer.o md5.o data_fastcgi.o fdevent_select.o fdevent_linux_rtsig.o fdevent_poll.o fdevent_linux_sysepoll.o fdevent_solaris_devpoll.o fdevent_freebsd_kqueue.o data_config.o bitset.o inet_ntop_cache.o crc32.o connections-glue.o configfile-glue.o http-header-glue.o network_write.o network_linux_sendfile.o network_freebsd_sendfile.o network_writev.o network_solaris_sendfilev.o network_openssl.o splaytree.o status_counter.o -Wl,--export-dynamic  -ldl
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/src'
+Making all in doc
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/doc'
+Making all in tests
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests'
+Making all in docroot
+make[3]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot'
+Making all in 123
+make[4]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/123'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/123'
+Making all in www
+make[4]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www'
+Making all in go
+make[5]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/go'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/go'
+Making all in indexfile
+make[5]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/indexfile'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/indexfile'
+Making all in expire
+make[5]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/expire'
+make[5]: Nothing to be done for 'all'.
+make[5]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www/expire'
+make[5]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www'
+make[5]: Nothing to be done for 'all-am'.
+make[5]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www'
+make[4]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot/www'
+make[4]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot'
+make[4]: Nothing to be done for 'all-am'.
+make[4]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot'
+make[3]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests/docroot'
+make[3]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests'
+make[3]: Nothing to be done for 'all-am'.
+make[3]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests'
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/tests'
+Making all in cygwin
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/cygwin'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/cygwin'
+Making all in openwrt
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/openwrt'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17/openwrt'
+make[2]: Entering directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17'
+make[2]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17'
+make[1]: Leaving directory '/home/cs4278/hw/cs4278-hw04/downloads/lighttpd-1.4.17'
+
+Summary of the reports
+
+      NULL_DEREFERENCE: 76
+            DEAD_STORE: 57
+           MEMORY_LEAK: 49
+         RESOURCE_LEAK: 1
+  QUANDARY_TAINT_ERROR: 1
